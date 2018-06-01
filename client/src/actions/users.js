@@ -1,7 +1,7 @@
 import * as request from 'superagent'
 import * as jwt from 'jsonwebtoken'
 import { jwtSecret } from '../constants'
-import { isExpired } from '../jwt'
+//import { isExpired } from '../jwt'
 
 const baseUrl = 'http://localhost:4001'
 
