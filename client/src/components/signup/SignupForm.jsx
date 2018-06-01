@@ -22,21 +22,21 @@ export default class SignupForm extends PureComponent {
         return (
             <form onSubmit={this.handleSubmit} className="signupForm">
                 <div className="signupFormLabels">
-                    <label for="firstName"><b>First Name:</b></label>
+                    <label htmlFor="firstName"><b>First Name:</b></label>
                     <input label='firstName'
                         type="firstName" placeholder ='first name' name="firstName" id="firstName" value={
                             this.state.firstName || ''
                         } onChange={this.handleChange} />
                 </div>
                 <div className="signupFormLabels">
-                    <label for="lastName"><b>Last Name:</b></label>
+                    <label htmlFor="lastName"><b>Last Name:</b></label>
                     <input label='lastName'
                         type="lastName" placeholder='last name' name="lastName" id="lastName" value={
                             this.state.lastName || ''
                         } onChange={this.handleChange} />
                 </div>
                 <div className="signupFormLabels">
-                    <label for="email"><b>Email:</b></label>
+                    <label htmlFor="email"><b>Email:</b></label>
                     <input label='email'
                         type="email" placeholder='email' name="email" id="email" value={
                             this.state.email || ''
@@ -44,7 +44,7 @@ export default class SignupForm extends PureComponent {
                 </div>
 
                 <div className="signupFormLabels">
-                    <label for="password"><b>Password:</b></label>
+                    <label htmlFor="password"><b>Password:</b></label>
                     <input label='password'
                         type="password" placeholder='password' name="password" id="password" value={
                             this.state.password || ''
@@ -52,7 +52,7 @@ export default class SignupForm extends PureComponent {
                 </div>
 
                 <div className="signupFormLabels">
-                    <label for="password"><b>Confirm Password:</b></label>
+                    <label htmlFor="password"><b>Confirm Password:</b></label>
                     <input label='confirmPassword'
                         type="password" placeholder='one more time!' name="confirmPassword" id="confirmPassword" value={
                             this.state.confirmPassword || ''
