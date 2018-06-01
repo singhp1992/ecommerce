@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { TextField } from 'material-ui';
+
 
 export default class SignupForm extends PureComponent {
     state = {}
@@ -22,33 +22,33 @@ export default class SignupForm extends PureComponent {
         return (
             <form onSubmit={this.handleSubmit} className="signupForm">
                 <div className="signupFormLabels">
-                    <TextField label='voornaam'
+                    <h1 label='voornaam'
                         type="firstName" name="firstName" id="firstName" value={
                             this.state.firstName || ''
                         } onChange={this.handleChange} />
                 </div>
                 <div className="signupFormLabels">
-                    <TextField label='achternaam'
+                    <h1 label='achternaam'
                         type="lastName" name="lastName" id="lastName" value={
                             this.state.lastName || ''
                         } onChange={this.handleChange} />
                 </div>
                 <div className="signupFormLabels">
-                    <TextField label='email'
+                    <h1 label='email'
                         type="email" name="email" id="email" value={
                             this.state.email || ''
                         } onChange={this.handleChange} />
                 </div>
 
                 <div className="signupFormLabels">
-                    <TextField label='wachtwoord'
+                    <h1 label='wachtwoord'
                         type="password" name="password" id="password" value={
                             this.state.password || ''
                         } onChange={this.handleChange} />
                 </div>
 
                 <div className="signupFormLabels">
-                    <TextField label='herhaal wachtwoord'
+                    <h1 label='herhaal wachtwoord'
                         type="password" name="confirmPassword" id="confirmPassword" value={
                             this.state.confirmPassword || ''
                         } onChange={this.handleChange} />

@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.0.0-rc.0",
+    "@material-ui/icons": "^1.0.0-rc.0",
+    "@material/radio": "^0.35.0",
+    "material-ui": "^1.0.0-beta.47",
+    "material": "^0.2.6",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4",
-    "superagent": "^3.8.2"
+    "superagent": "^3.8.2",
+    "ui": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
