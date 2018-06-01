@@ -1,14 +1,34 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "target/index.js",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^1.0.3",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "@types/bcrypt": "^2.0.0",
+    "@types/koa": "^2.0.45",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/koa-multer": "^1.0.0",
+    "@types/koa-router": "^7.0.28",
+    "@types/node": "^10.0.9",
+    "@types/socketio-jwt-auth": "^0.0.0",
+    "bcrypt": "^2.0.1",
     "jsonwebtoken": "^8.2.1",
-    "pg": "6",
-    "sequelize": "^4.37.10"
+    "kcors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.3",
+    "routing-controllers": "^0.7.7",
+    "socket.io": "^2.1.0",
+    "socketio-jwt-auth": "^0.0.6",
+    "typeorm": "^0.2.5",
+    "typeorm-encrypted": "^0.5.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "start": "nodemon .",
+    "watch": "tsc -w",
+    "dev": "nodemon --inspect ."
   }
 }
