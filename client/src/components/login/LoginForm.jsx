@@ -21,15 +21,17 @@ export default class LoginForm extends PureComponent {
         return (
             <form onSubmit={this.handleSubmit} className="signupForm">
                 <div className="signupFormLabels">
+                    <label for="email"><b>Email:</b></label>
                     <input label='email' autoComplete="true"
-                        type="email" name="email" id="email" value={
+                        type="email" placeholder="email" name="email" id="email" value={
                             this.state.email || ''
                         } onChange={this.handleChange} />
                 </div>
 
                 <div className="signupFormLabels">
-                    <input label='wachtwoord' autoComplete="true"
-                        type="password" name="password" id="password" value={
+                    <label for="password"><b>Password:</b></label>
+                    <input label='password' autoComplete="true"
+                        type="password" placeholder="password"name="password" id="password" value={
                             this.state.password || ''
                         } onChange={this.handleChange} />
                 </div>

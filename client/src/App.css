@@ -26,3 +26,25 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.signupForm {
+  margin-right: 5%;
+}
+
+.signupFormLabels{
+  margin-bottom: 10px;
+}
+
+.signupFormLabels label {
+  margin-right: 10px;
+}
+
+.signupFormLabels input {
+  padding: 5px 30px 5px 3px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

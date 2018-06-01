@@ -12,13 +12,13 @@ class LoginPage extends PureComponent {
     render() {
         if (this.props.currentUser && this.props.currentUser.user) {
             return (
-                <Redirect to="/csv" />
+                <Redirect to="/products" />
             )
         }
 
         return (
             <div className='center'>
-                <h1 className='inloggen'>Inloggen</h1>
+                <h1 className='inloggen'>Login</h1>
 
                 <LoginForm onSubmit={this.handleSubmit} />
 
