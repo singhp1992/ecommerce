@@ -42,6 +42,7 @@ export const login = (email, password) => (dispatch) =>
             else {
                 console.error(err)
             }
+            console.log('working')
         })
 
 export const signup = (data) => (dispatch) =>

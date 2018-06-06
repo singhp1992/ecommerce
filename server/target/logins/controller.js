@@ -30,9 +30,9 @@ let LoginController = class LoginController {
     async authenticate({ email, password }) {
         const user = await entity_1.default.findOne({ where: { email } });
         if (!user)
-            throw new routing_controllers_1.NotFoundError('De combinatie email en wachtwoord is incorrect');
+            throw new routing_controllers_1.NotFoundError('The email and password is incorrect');
         if (!await user.checkPassword(password))
-            throw new routing_controllers_1.BadRequestError('De combinatie email en wachtwoord is incorrect');
+            throw new routing_controllers_1.BadRequestError('The email and password is incorrect');
         const jwt = jwt_1.sign({ id: user.id, firstName: user.firstName, lastName: user.lastName, email: user.email, permission: user.permission });
         return {
             jwt,

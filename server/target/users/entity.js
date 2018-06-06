@@ -14,8 +14,6 @@ const BaseEntity_1 = require("typeorm/repository/BaseEntity");
 const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 const bcrypt = require("bcrypt");
-const entity_1 = require("../transactions/entity");
-const entity_2 = require("../feedbacks/entity");
 let User = class User extends BaseEntity_1.BaseEntity {
     async setPassword(rawPassword) {
         const hash = await bcrypt.hash(rawPassword, 10);
@@ -54,14 +52,6 @@ __decorate([
     typeorm_1.Column('boolean', { default: false, nullable: true }),
     __metadata("design:type", Boolean)
 ], User.prototype, "permission", void 0);
-__decorate([
-    typeorm_1.OneToMany(_ => entity_1.default, transaction => transaction.user, { cascade: true, primary: true }),
-    __metadata("design:type", Array)
-], User.prototype, "transactions", void 0);
-__decorate([
-    typeorm_1.OneToMany(_ => entity_2.default, feedback => feedback.user, { cascade: true, primary: true }),
-    __metadata("design:type", Array)
-], User.prototype, "feedbacks", void 0);
 User = __decorate([
     typeorm_1.Entity()
 ], User);
