@@ -29,12 +29,12 @@ __decorate([
 ], Product.prototype, "price", void 0);
 __decorate([
     class_validator_1.IsString(),
-    typeorm_1.Column('text', { nullable: false }),
+    typeorm_1.Column('text', { nullable: true }),
     __metadata("design:type", String)
 ], Product.prototype, "description", void 0);
 __decorate([
     class_validator_1.IsString(),
-    typeorm_1.Column('text', { nullable: false }),
+    typeorm_1.Column('text', { nullable: true }),
     __metadata("design:type", String)
 ], Product.prototype, "image", void 0);
 Product = __decorate([
