@@ -21,8 +21,8 @@ export default class LoginController {
     ) {
         const user = await User.findOne({ where: { email } })
 
-        if (!user) throw new NotFoundError('De combinatie email en wachtwoord is incorrect')
-        if (!await user.checkPassword(password)) throw new BadRequestError('De combinatie email en wachtwoord is incorrect')
+        if (!user) throw new NotFoundError('The email and password is incorrect')
+        if (!await user.checkPassword(password)) throw new BadRequestError('The email and password is incorrect')
 
         const jwt = sign({ id: user.id!, firstName: user.firstName, lastName: user.lastName, email: user.email, permission: user.permission })
         return {
