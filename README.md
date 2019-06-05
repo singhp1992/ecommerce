@@ -1,23 +1,6 @@
 # Ecommerce
 ecommerce - originally created during week 3 of codaisseur academy
 
-This project aims to create a valuation app for students of a class.
-
-## Features
-
-*Add new batch
-
-*Delete existing batch
-
-*Add students to batch
-
-*Delete students from batch
-
-*Assign color code to each student and add comments
-
-*See the percentage of students evaluated to each color in a batch
-
-*Pick a random student to ask for question
 
 ## Setup
 
