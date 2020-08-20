@@ -11,7 +11,7 @@
     "@types/koa-router": "^7.0.28",
     "@types/node": "^10.0.9",
     "@types/socketio-jwt-auth": "^0.0.0",
-    "bcrypt": "^2.0.1",
+    "bcrypt": "^5.0.0",
     "jsonwebtoken": "^8.2.1",
     "kcors": "^2.2.1",
     "koa": "^2.5.1",
