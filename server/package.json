@@ -20,7 +20,7 @@
     "koa-router": "^7.4.0",
     "pg": "^7.4.3",
     "routing-controllers": "^0.7.7",
-    "socket.io": "^2.1.0",
+    "socket.io": "^2.4.0",
     "socketio-jwt-auth": "^0.0.6",
     "typeorm": "^0.2.5",
     "typeorm-encrypted": "^0.5.0",
