@@ -22,7 +22,7 @@
     "routing-controllers": "^0.7.7",
     "socket.io": "^2.1.0",
     "socketio-jwt-auth": "^0.0.6",
-    "typeorm": "^0.2.5",
+    "typeorm": "^0.2.25",
     "typeorm-encrypted": "^0.5.0",
     "typescript": "^2.8.3"
   },
