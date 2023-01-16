@@ -12,7 +12,7 @@
     "@types/node": "^10.0.9",
     "@types/socketio-jwt-auth": "^0.0.0",
     "bcrypt": "^2.0.1",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
     "kcors": "^2.2.1",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.0",
